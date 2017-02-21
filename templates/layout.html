@@ -1,20 +1,74 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600' rel='stylesheet'>
-<link href="{{ url_for('static',filename='css/main.css') }}" rel="
-stylesheet">
-</head>
-<body>
+<meta charset="utf-8">
+<!-- IE Edge Meta Tag -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!-- Viewport viktigt for mobile friendly-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Optional IE8 Support -->
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
 
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600' rel='stylesheet'>
+<link href="{{ url_for('static',filename='css/main.css') }}" rel='stylesheet'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600' rel='stylesheet'>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+
+
+
+<body id="page-top" class="index">
 <header>
-<div class="container">
-<h1 class="title">Learning Flask </h1>
-</div>
 </header>
+    <!-- Navigation -->
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="/">Start</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href=""></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="portfolio">Portfolio</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="about">About</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+        <header>
+        <div>
+  
+        </div>
+    </header>
 {% block content %}
 {% endblock %}
- 
+
+ <!-- FOOTER SECTION - Before closing </body> tag -->
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- Minified JavaScript krävs för vissa javascript funktioner-->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script type="text/javascript"></script>
 </body>
 </html>
 

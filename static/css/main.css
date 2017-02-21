@@ -13,7 +13,10 @@
 	background-color: #4CAF50;
 	color:white;
 }
-
+.btn-secondary:hover {
+	background-color: #4CAF50;
+	color:white;
+}
 .btn-secondary {
 	background-color: #008CBA;
 	border: none;
